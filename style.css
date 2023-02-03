@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --dark-green: hsl(156,42%,18%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    background-color: var(--Cream);
+}
+
+.product-card{
+    width: 330px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 70px auto;
+    background-color: var(--White);
+}
+.product-image{
+    width: 100%;
+}
+
+.product-type{
+    color: var(--Dark-grayish-blue);
+    font-size: 1em;
+    letter-spacing: 3px;
+    margin: 18px 24px 8px 24px;
+}
+
+.product-title{
+    font-family: 'Fraunces', serif;
+    margin: 0 24px 16px 24px;
+    font-size: 2em;
+    color: var(--Very-dark-blue);
+    line-height: 33px;
+}
+
+.product-description{
+    margin: 0 24px 20px 24px;
+    font-size: 1em;
+    color: var(--Dark-grayish-blue);
+    line-height: 20px;
+}
+
+.product-price{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 0px 24px 15px 24px;
+}
+.product-newprice{
+    font-family: "Fraunces", sans-serif;
+    font-size: 2.5em;
+    color: var(--Dark-cyan);
+}
+.product-oldprice{
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+.product-button{
+    background-color: var(--Dark-cyan);
+    width: 295px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1em;
+    color: var(--White);
+    font-weight: bold;
+    display: block;
+    margin: auto;
+}
+
+.product-button:hover{
+    cursor: pointer;
+    background-color: var(--dark-green);
+}
+ .image-button{
+    margin-right: 5px;
+ }
+
+ /*--------desktop desing---------*/
+
+ @media (min-width:600px){
+    .product-card{
+        width: 600px;
+        height: 450px;
+        display: flex;
+        margin: 200px auto 200px;
+    }
+    .left-section{
+        width: 50%;
+
+    }
+    .product-image{
+        content: url(./images/image-product-desktop.jpg);
+    }
+    .right-section{
+        width: 50%;
+    }
+    .product-type{
+        margin: 30px 30px 16px 24px;
+    }
+    .product-title{
+        font-size: 2.5em;
+        line-height: 1em;
+        margin: 5px 30px 16px 24px;
+    }
+    .product-description{
+        font-size: 1.1em;
+        margin: 25px 30px 16px 24px;
+    }
+    .product-price{
+        margin: 25px 30px 26px 24px;
+
+    }
+    .product-button{
+        width: 240px;
+    }
+
+ }
+
+ 
